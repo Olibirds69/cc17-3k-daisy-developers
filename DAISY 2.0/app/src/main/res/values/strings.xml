@@ -3,9 +3,5 @@
   
     <string name="daisy_splashscreen_logo">DAISY SplashScreen Logo</string>
     <string name="assistive_communication">Assistive Communication</string>
-    <string name="navigation_assistant">Navigation Assistant</string>
-    <string name="money_detection">Money Detection</string>
-    <string name="transportation">Transportation</string>
-    <string name="search_location">Search location</string>
 
 </resources>
