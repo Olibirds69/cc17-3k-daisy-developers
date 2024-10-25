@@ -68,23 +68,6 @@ class DashboardActivity : AppCompatActivity() {
             speak("Assistive Communication")
         }
 
-        binding.moneyDetectionBtn.setOnClickListener {
-            Toast.makeText(this, "Money Detection Selected", Toast.LENGTH_SHORT).show()
-            speak("Money Detection")
-        }
-
-        binding.navigationAssistantBtn.setOnClickListener {
-            Toast.makeText(this, "Navigation Assistant Selected", Toast.LENGTH_SHORT).show()
-            val intent = Intent(this, NavigationAssistActivity::class.java)
-            startActivity(intent)
-            speak("Navigation Assistant")
-        }
-
-        binding.transportationBtn.setOnClickListener {
-            Toast.makeText(this, "Transportation Selected", Toast.LENGTH_SHORT).show()
-            speak("Transportation Assistant")
-        }
-
         binding.emergencyBtn.setOnClickListener {
             Toast.makeText(this, "Emergency", Toast.LENGTH_SHORT).show()
             speak("EMERGENCY DIAL, press the screen to dial 911")
@@ -179,24 +162,9 @@ class DashboardActivity : AppCompatActivity() {
                         stopListeningForVoiceCommands() // Stop listening for commands
                         isVoiceCommandActive = false // Update state variable
                     }
-                    command.contains("open navigate", ignoreCase = true) -> {
-                        speak("Opening navigation.")
-                        // Start navigation feature
-                        val intent = Intent(this, NavigationAssistActivity::class.java)
-                        startActivity(intent)
-                        speak("Where do you want to go?")
-                    }
                     command.contains("open assistive communication", ignoreCase = true) -> {
                         speak("Sorry, this feature is still in development.")
                         // Start assistive communication feature
-                    }
-                    command.contains("open money detection", ignoreCase = true) -> {
-                        speak("Sorry, this feature is still in development.")
-                        // Start money detection feature
-                    }
-                    command.contains("open transportation assistant", ignoreCase = true) -> {
-                        speak("Sorry, this feature is still in development.")
-                        // Start transportation assistant feature
                     }
                     command.contains("back to menu", ignoreCase = true) -> {
                         speak("Returning to menu.")
