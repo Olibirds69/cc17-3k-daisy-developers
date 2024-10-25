@@ -44,19 +44,12 @@
         </activity>
 
         <activity
-            android:name=".NavigationAssistActivity"/>
-
-        <activity
             android:name=".MainActivity"
             android:exported="true"/>
 
         <meta-data
             android:name="preloaded_fonts_list"
             android:resource="@array/preloaded_fonts_array" />
-
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyBJm_dHDQyxruXYJfX7N4QDkP0OywrdaQk" />
 
     </application>
 
