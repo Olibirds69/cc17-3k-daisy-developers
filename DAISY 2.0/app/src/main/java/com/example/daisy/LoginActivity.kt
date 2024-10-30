@@ -34,7 +34,7 @@ class LoginActivity : AppCompatActivity() {
 
                 firebaseAuth.signInWithEmailAndPassword(email,pass).addOnCompleteListener {
                     if (it.isSuccessful) {
-                        val intent = Intent(this, DashboardActivity::class.java)
+                        val intent = Intent(this, MainActivity::class.java)
                         startActivity(intent)
                     } else {
                         Toast.makeText(this, it.exception.toString(), Toast.LENGTH_SHORT).show()
@@ -62,7 +62,7 @@ class LoginActivity : AppCompatActivity() {
                     if (firebaseAuth.currentUser != null) {
                         // If the user still exists, go to DashBoardActivity
                         Log.d("LoginActivity", "User exists: ${currentUser.email}")
-                        val intent = Intent(this, DashboardActivity::class.java)
+                        val intent = Intent(this, MainActivity::class.java)
                         intent.flags =
                             Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
                         startActivity(intent)

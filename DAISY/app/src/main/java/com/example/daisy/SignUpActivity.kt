@@ -89,4 +89,6 @@ class SignUpActivity() : AppCompatActivity(), Parcelable {
         }
     }
 
+    fun signInClick(view: View) {}
+
 }

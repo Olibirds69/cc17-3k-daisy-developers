@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.google.gms.google.services)
+    id ("de.undercouch.download") version "5.0.1"
 }
 
 android {
@@ -39,8 +40,14 @@ android {
     }
 }
 
-dependencies {
+// Define extra properties for asset directories
+extra["ASSET_DIR"] = "app/src/main/assets"
+extra["TEST_ASSETS_DIR"] = "app/src/androidTest/assets"
 
+
+apply (from = "download_tasks.gradle")
+
+dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
@@ -49,10 +56,34 @@ dependencies {
     implementation(libs.firebase.auth)
     implementation(libs.androidx.gridlayout)
     implementation(libs.google.maps)
-    implementation("com.google.android.libraries.places:places:4.0.0")
-   // implementation("com.squareup.okhttp3:okhttp:4.9.3")
+    implementation(libs.places)
+    implementation(libs.androidx.navigation.fragment.ktx)
+    implementation(libs.androidx.camera.core)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-    implementation (libs.androidx.appcompat.v140)
+
+
+    // Navigation library
+    implementation(libs.androidx.navigation.fragment.ktx.v253)
+    implementation(libs.androidx.navigation.ui.ktx)
+
+    // CameraX Libraries
+    implementation(libs.androidx.camera.core.v120alpha02)
+    implementation(libs.androidx.camera.camera2)
+    implementation(libs.androidx.camera.lifecycle)
+    implementation(libs.androidx.camera.view)
+
+    // WindowManager
+    implementation(libs.androidx.window)
+
+    // Unit and Instrumented Testing
+    testImplementation(libs.junit)
+    androidTestImplementation(libs.androidx.junit.v113)
+    androidTestImplementation(libs.androidx.espresso.core.v340)
+
+    // Mediapipe Library
+    implementation(libs.tasks.vision)
+
+
 }
