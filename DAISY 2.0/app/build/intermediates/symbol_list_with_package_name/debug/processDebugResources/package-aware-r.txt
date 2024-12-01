@@ -3748,7 +3748,6 @@ id action_menu_presenter
 id action_mode_bar
 id action_mode_bar_stub
 id action_mode_close_button
-id action_permissions_to_CameraFragment
 id action_permissions_to_dashboard
 id action_text
 id actions
@@ -3841,7 +3840,6 @@ id custom
 id customPanel
 id cut
 id dark
-id dashboardFragment
 id dashboard_toolbar
 id date_picker_actions
 id decelerate
@@ -4030,7 +4028,6 @@ id mtrl_view_tag_bottom_padding
 id multiply
 id nav_controller_view_tag
 id nav_graph
-id nav_host_fragment
 id nav_host_fragment_container
 id nav_messages
 id nav_settings
@@ -4396,6 +4393,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_dashboard
 layout activity_main
 layout activity_splash_screen
 layout browser_actions_context_menu_page
@@ -4577,6 +4575,7 @@ string common_signin_button_text
 string common_signin_button_text_long
 string copy_toast_msg
 string daisy_splashscreen_logo
+string dashboard_activity_label
 string dest_title
 string error_a11y_label
 string error_icon_content_description

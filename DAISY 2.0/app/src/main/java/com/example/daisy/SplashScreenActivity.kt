@@ -10,8 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.daisy.databinding.ActivitySplashScreenBinding
-
-//Splash screen activity is for keme keme before the login page / signup page of DAISY
+import com.example.daisy.DashboardActivity
 
 @SuppressLint("CustomSplashScreen")
 @Suppress("DEPRECATION")
@@ -27,7 +26,7 @@ class SplashScreenActivity : AppCompatActivity() {
         binding.ssLogo.alpha = 0f
         binding.ssLogo.animate().setDuration(1000).alpha(1f).withEndAction {
             // Navigate to LoginActivity after the animation
-            val i = Intent(this, MainActivity::class.java)
+            val i = Intent(this, DashboardActivity::class.java)
             startActivity(i)
             overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
             finish()

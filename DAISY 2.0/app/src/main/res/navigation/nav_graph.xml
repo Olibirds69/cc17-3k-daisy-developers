@@ -13,22 +13,10 @@
 
         <action
             android:id="@+id/action_permissions_to_dashboard"
-            app:destination="@id/dashboardFragment"
-            app:popUpToInclusive="true" />
-
-
-    </fragment>
-
-    <fragment
-        android:id="@+id/dashboardFragment"
-        android:name="com.example.daisy.fragment.DashboardFragment"
-        android:label="DashboardFragment">
-
-        <action
-            android:id="@+id/action_permissions_to_CameraFragment"
             app:destination="@id/camera_fragment"
-            app:popUpTo="@id/dashboardFragment"
             app:popUpToInclusive="true" />
+
+
     </fragment>
 
 
