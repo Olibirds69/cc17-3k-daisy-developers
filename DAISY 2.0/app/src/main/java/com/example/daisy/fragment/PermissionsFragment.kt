@@ -60,7 +60,7 @@ class PermissionsFragment : Fragment() {
                 requireActivity(),
                 R.id.fragment_container
             ).navigate(
-                R.id.action_permissions_to_dashboard  // Use the correct action to navigate to the camera fragment
+                R.id.action_permissions_to_camera  // Use the correct action to navigate to the camera fragment
             )
         }
     }

@@ -6,23 +6,25 @@
     app:startDestination="@id/permissions_fragment"
     tools:ignore="ExtraText">
 
+    <!-- Permissions Fragment -->
     <fragment
         android:id="@+id/permissions_fragment"
         android:name="com.example.daisy.fragment.PermissionsFragment"
         android:label="PermissionsFragment">
 
-        <!-- Action to navigate to camera fragment -->
+        <!-- Action to navigate to Camera Fragment -->
         <action
-            android:id="@+id/action_permissions_to_dashboard"
+            android:id="@+id/action_permissions_to_camera"
             app:destination="@id/camera_fragment" />
     </fragment>
 
+    <!-- Camera Fragment -->
     <fragment
         android:id="@+id/camera_fragment"
         android:name="com.example.daisy.fragment.CameraFragment"
         android:label="CameraFragment">
 
-        <!-- Action to navigate back to permissions fragment -->
+        <!-- Action to navigate back to Permissions Fragment -->
         <action
             android:id="@+id/action_camera_to_permissions"
             app:destination="@id/permissions_fragment"

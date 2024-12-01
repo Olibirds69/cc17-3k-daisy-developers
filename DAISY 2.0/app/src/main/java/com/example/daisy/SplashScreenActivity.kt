@@ -2,15 +2,9 @@ package com.example.daisy
 
 import android.annotation.SuppressLint
 import android.content.Intent
-import android.os.Build.VERSION_CODES.R
 import android.os.Bundle
-import android.widget.ImageView
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.example.daisy.databinding.ActivitySplashScreenBinding
-import com.example.daisy.DashboardActivity
 
 @SuppressLint("CustomSplashScreen")
 @Suppress("DEPRECATION")

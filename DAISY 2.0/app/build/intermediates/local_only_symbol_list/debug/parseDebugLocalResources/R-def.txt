@@ -65,7 +65,7 @@ font asset
 font bowlby_one_sc
 font titan_one
 id action_camera_to_permissions
-id action_permissions_to_dashboard
+id action_permissions_to_camera
 id bottom_navigation
 id bottom_sheet_layout
 id btnClearText

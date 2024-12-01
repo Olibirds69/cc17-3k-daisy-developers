@@ -9,6 +9,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.widget.Toolbar;
 import androidx.cardview.widget.CardView;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
+import androidx.fragment.app.FragmentContainerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.daisy.R;
@@ -31,6 +32,9 @@ public final class ActivityDashboardBinding implements ViewBinding {
   public final Toolbar dashboardToolbar;
 
   @NonNull
+  public final FragmentContainerView fragmentContainer;
+
+  @NonNull
   public final CardView learnSignlanguageCard;
 
   @NonNull
@@ -38,12 +42,13 @@ public final class ActivityDashboardBinding implements ViewBinding {
 
   private ActivityDashboardBinding(@NonNull CoordinatorLayout rootView,
       @NonNull BottomNavigationView bottomNavigation, @NonNull CardView cameraFragment,
-      @NonNull Toolbar dashboardToolbar, @NonNull CardView learnSignlanguageCard,
-      @NonNull CardView sampleQuizCard) {
+      @NonNull Toolbar dashboardToolbar, @NonNull FragmentContainerView fragmentContainer,
+      @NonNull CardView learnSignlanguageCard, @NonNull CardView sampleQuizCard) {
     this.rootView = rootView;
     this.bottomNavigation = bottomNavigation;
     this.cameraFragment = cameraFragment;
     this.dashboardToolbar = dashboardToolbar;
+    this.fragmentContainer = fragmentContainer;
     this.learnSignlanguageCard = learnSignlanguageCard;
     this.sampleQuizCard = sampleQuizCard;
   }
@@ -93,6 +98,12 @@ public final class ActivityDashboardBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.fragment_container;
+      FragmentContainerView fragmentContainer = ViewBindings.findChildViewById(rootView, id);
+      if (fragmentContainer == null) {
+        break missingId;
+      }
+
       id = R.id.learn_signlanguage_card;
       CardView learnSignlanguageCard = ViewBindings.findChildViewById(rootView, id);
       if (learnSignlanguageCard == null) {
@@ -106,7 +117,8 @@ public final class ActivityDashboardBinding implements ViewBinding {
       }
 
       return new ActivityDashboardBinding((CoordinatorLayout) rootView, bottomNavigation,
-          cameraFragment, dashboardToolbar, learnSignlanguageCard, sampleQuizCard);
+          cameraFragment, dashboardToolbar, fragmentContainer, learnSignlanguageCard,
+          sampleQuizCard);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
