@@ -52,12 +52,12 @@
         "source": "C:\\Users\\User\\.gradle\\daemon\\8.9\\com.example.daisy.app-main-67:\\mipmap-anydpi\\ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\User\\.gradle\\daemon\\8.9\\com.example.daisy.app-debug-65:\\drawable_ic_sign_language.xml.flat",
-        "source": "C:\\Users\\User\\.gradle\\daemon\\8.9\\com.example.daisy.app-main-67:\\drawable\\ic_sign_language.xml"
-    },
-    {
         "merged": "C:\\Users\\User\\.gradle\\daemon\\8.9\\com.example.daisy.app-debug-65:\\font_titan_one.xml.flat",
         "source": "C:\\Users\\User\\.gradle\\daemon\\8.9\\com.example.daisy.app-main-67:\\font\\titan_one.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\.gradle\\daemon\\8.9\\com.example.daisy.app-debug-65:\\drawable_ic_sign_language.xml.flat",
+        "source": "C:\\Users\\User\\.gradle\\daemon\\8.9\\com.example.daisy.app-main-67:\\drawable\\ic_sign_language.xml"
     },
     {
         "merged": "C:\\Users\\User\\.gradle\\daemon\\8.9\\com.example.daisy.app-debug-65:\\font_bowlby_one_sc.xml.flat",
@@ -156,10 +156,6 @@
         "source": "C:\\Users\\User\\.gradle\\daemon\\8.9\\com.example.daisy.app-main-67:\\mipmap-hdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.daisy.app-debug-65:/layout_activity_dashboard.xml.flat",
-        "source": "com.example.daisy.app-main-67:/layout/activity_dashboard.xml"
-    },
-    {
         "merged": "C:\\Users\\User\\.gradle\\daemon\\8.9\\com.example.daisy.app-debug-65:\\drawable_home_ic.xml.flat",
         "source": "C:\\Users\\User\\.gradle\\daemon\\8.9\\com.example.daisy.app-main-67:\\drawable\\home_ic.xml"
     },
@@ -226,5 +222,9 @@
     {
         "merged": "C:\\Users\\User\\.gradle\\daemon\\8.9\\com.example.daisy.app-debug-65:\\drawable_ic_baseline_add_24.xml.flat",
         "source": "C:\\Users\\User\\.gradle\\daemon\\8.9\\com.example.daisy.app-main-67:\\drawable\\ic_baseline_add_24.xml"
+    },
+    {
+        "merged": "com.example.daisy.app-debug-65:/navigation_nav_graph.xml.flat",
+        "source": "com.example.daisy.app-main-67:/navigation/nav_graph.xml"
     }
 ]

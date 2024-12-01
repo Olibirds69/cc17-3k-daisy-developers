@@ -1,11 +1,11 @@
 package com.example.daisy
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
 import androidx.fragment.app.FragmentTransaction
-import androidx.navigation.findNavController
 import com.example.daisy.R
 import com.example.daisy.fragment.CameraFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -27,14 +27,19 @@ class DashboardActivity : AppCompatActivity() {
             // Handle the Real-Time Sign Language card click
             Toast.makeText(this, "Real-Time Sign Language clicked!", Toast.LENGTH_SHORT).show()
 
-            // Ensure the NavController is used in the correct context (Activity or Fragment)
-            val navController = findNavController(R.id.fragment_container) // Get NavController for the NavHostFragment
+            // Create an intent to navigate to MainActivity
+            val intent = Intent(this, MainActivity::class.java)
 
-            // Navigate to CameraFragment via the NavController
-            navController.navigate(R.id.camera_fragment)  // Pass the correct ID for CameraFragment as defined in the nav_graph.xml
+            // Optionally, add flags to clear the activity stack or control behavior
+            // For example, to make MainActivity the only activity in the stack:
+            // intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK)
+
+            // Start MainActivity
+            startActivity(intent)
+
+            // Optional: If you want to close the current activity, you can do:
+            // finish()
         }
-
-
 
         learnSignLanguageCard.setOnClickListener {
             // Handle the Learn Sign Language card click

@@ -1,4 +1,3 @@
-
 package com.example.daisy.fragment
 
 import android.Manifest
@@ -44,11 +43,11 @@ class PermissionsFragment : Fragment() {
                 requireContext(),
                 Manifest.permission.CAMERA
             ) -> {
-                navigateToCamera()
+                navigateToCamera()  // Permission granted, navigate to camera
             }
             else -> {
                 requestPermissionLauncher.launch(
-                    Manifest.permission.CAMERA
+                    Manifest.permission.CAMERA  // Request permission
                 )
             }
         }
@@ -56,11 +55,12 @@ class PermissionsFragment : Fragment() {
 
     private fun navigateToCamera() {
         lifecycleScope.launchWhenStarted {
+            // Correctly navigate to the camera fragment
             Navigation.findNavController(
                 requireActivity(),
                 R.id.fragment_container
             ).navigate(
-                R.id.action_camera_to_permissions
+                R.id.action_permissions_to_dashboard  // Use the correct action to navigate to the camera fragment
             )
         }
     }

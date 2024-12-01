@@ -11,20 +11,18 @@
         android:name="com.example.daisy.fragment.PermissionsFragment"
         android:label="PermissionsFragment">
 
+        <!-- Action to navigate to camera fragment -->
         <action
             android:id="@+id/action_permissions_to_dashboard"
-            app:destination="@id/camera_fragment"
-            app:popUpToInclusive="true" />
-
-
+            app:destination="@id/camera_fragment" />
     </fragment>
-
 
     <fragment
         android:id="@+id/camera_fragment"
         android:name="com.example.daisy.fragment.CameraFragment"
         android:label="CameraFragment">
 
+        <!-- Action to navigate back to permissions fragment -->
         <action
             android:id="@+id/action_camera_to_permissions"
             app:destination="@id/permissions_fragment"
