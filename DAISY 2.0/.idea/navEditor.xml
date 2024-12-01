@@ -13,8 +13,8 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="12" />
-                            <option name="y" value="368" />
+                            <option name="x" value="170" />
+                            <option name="y" value="385" />
                           </Point>
                         </option>
                         <option name="myPositions">
@@ -29,13 +29,13 @@
                       </LayoutPositions>
                     </value>
                   </entry>
-                  <entry key="dashboard_fragment">
+                  <entry key="dashboardActivity">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="12" />
-                            <option name="y" value="12" />
+                            <option name="x" value="-80" />
+                            <option name="y" value="384" />
                           </Point>
                         </option>
                       </LayoutPositions>
@@ -46,17 +46,12 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="256" />
-                            <option name="y" value="368" />
+                            <option name="x" value="-299" />
+                            <option name="y" value="384" />
                           </Point>
                         </option>
                         <option name="myPositions">
                           <map>
-                            <entry key="action_permissions_to_camera">
-                              <value>
-                                <LayoutPositions />
-                              </value>
-                            </entry>
                             <entry key="action_permissions_to_dashboard">
                               <value>
                                 <LayoutPositions />

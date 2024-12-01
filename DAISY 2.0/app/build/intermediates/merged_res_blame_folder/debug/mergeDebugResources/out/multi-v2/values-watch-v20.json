@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.daisy.app-mergeDebugResources-62:/values-watch-v20/values-watch-v20.xml",
+            "outputFile": "com.example.daisy.app-mergeDebugResources-3:/values-watch-v20/values-watch-v20.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\User\\.gradle\\caches\\transforms-4\\a4243cca94b7100038ef15ba96ba357d\\transformed\\appcompat-1.7.0\\res\\values-watch-v20\\values-watch-v20.xml",
+                    "source": "C:\\Users\\kinga\\iDamo-App\\caches\\8.9\\transforms\\f853a13d581907a1113805f39deb1ffa\\transformed\\appcompat-1.7.0\\res\\values-watch-v20\\values-watch-v20.xml",
                     "from": {
                         "startLines": "2,5,8",
                         "startColumns": "4,4,4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\User\\.gradle\\caches\\transforms-4\\a017a7b836d4359cc6bcbba51d50fb29\\transformed\\play-services-auth-20.7.0\\res\\values-watch-v20\\values.xml",
+                    "source": "C:\\Users\\kinga\\iDamo-App\\caches\\8.9\\transforms\\ed689b6e0c423a3d00b6a38e537af224\\transformed\\jetified-play-services-auth-20.7.0\\res\\values-watch-v20\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11",
                         "startColumns": "0,0,0,0,0,0,0,0",

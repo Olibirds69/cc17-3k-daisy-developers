@@ -6,6 +6,7 @@ import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.daisy.DashboardItem
+import com.example.daisy.R
 
 class DashboardAdapter(
     private val items: List<DashboardItem>,

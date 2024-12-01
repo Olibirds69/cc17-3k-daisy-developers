@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/permissions_fragment">
+    app:startDestination="@id/permissions_fragment"
+    tools:ignore="ExtraText">
 
     <fragment
         android:id="@+id/permissions_fragment"
@@ -10,19 +12,25 @@
         android:label="PermissionsFragment">
 
         <action
-            android:id="@+id/action_permissions_to_camera"
-            app:destination="@id/camera_fragment"
-            app:popUpTo="@id/permissions_fragment"
+            android:id="@+id/action_permissions_to_dashboard"
+            app:destination="@id/dashboardFragment"
             app:popUpToInclusive="true" />
 
-        <!-- Action to navigate to DashboardFragment -->
-        <action
-            android:id="@+id/action_permissions_to_dashboard"
-            app:destination="@id/dashboard_fragment"
-            app:popUpTo="@id/permissions_fragment"
-            app:popUpToInclusive="true" />
 
     </fragment>
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.example.daisy.fragment.DashboardFragment"
+        android:label="DashboardFragment">
+
+        <action
+            android:id="@+id/action_permissions_to_CameraFragment"
+            app:destination="@id/camera_fragment"
+            app:popUpTo="@id/dashboardFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
 
     <fragment
         android:id="@+id/camera_fragment"
@@ -36,8 +44,4 @@
             app:popUpToInclusive="true" />
     </fragment>
 
-    <activity
-        android:id="@+id/dashboard_activity"
-        android:name="com.example.daisy.DashboardActivity"
-        android:label="DashboardActivity" />
 </navigation>

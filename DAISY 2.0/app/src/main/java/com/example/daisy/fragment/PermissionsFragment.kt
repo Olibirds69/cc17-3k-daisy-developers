@@ -60,7 +60,7 @@ class PermissionsFragment : Fragment() {
                 requireActivity(),
                 R.id.fragment_container
             ).navigate(
-                R.id.action_permissions_to_camera
+                R.id.action_camera_to_permissions
             )
         }
     }

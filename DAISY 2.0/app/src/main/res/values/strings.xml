@@ -32,8 +32,9 @@
         <string name="label_hand_presence_confidence_threshold">Presence
         Threshold</string>
         <string name="label_delegate">Delegate</string>
+    <string name="dashboard_activity_label" />
 
-        <string-array name="delegate_spinner_titles">
+    <string-array name="delegate_spinner_titles">
             <item>CPU</item>
             <item>GPU</item>
         </string-array>

@@ -17,4 +17,5 @@
     <color name="vv_light_blue">#80CBC4</color>
     <color name="black">#000000</color>
     <color name="light_blue">#009688</color>
+    <color name="colorPrimary">#165FF1</color>
 </resources>
